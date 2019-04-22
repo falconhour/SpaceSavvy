@@ -8,7 +8,8 @@ module.exports = {
         main: './src/index.js',
         vendor: [
             'react',
-            'react-dom'
+            'react-dom',
+            'bootstrap'
         ]
     },
     output: {
@@ -42,6 +43,10 @@ module.exports = {
             {
                 test: /\.(svg}png|jpg|gif|eot|ttf|woff|woff2)$/,
                 loader: 'file-loader'
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             },
             {
                 test: /\.scss$/,

@@ -1,26 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import spacePhoto from './statics/space-photo.jpg';
-import Playground from './playground'
+import Header from './components/Header/Header';
+import './statics/styles/index.scss';
+import Jumbotron from './components/Jumbotron/Jumbotron';
+import { Container, Row, Col, Navbar } from 'react-bootstrap';
 
-const app = document.getElementById('app');
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <div className='big-header'>
+                    <Navbar expand="lg" className='cs-navbar'>
+                        <Container>
+                            <Navbar.Brand href="#home">SPACE SAVVY</Navbar.Brand>
+                        </Container>
+                    </Navbar>
+                    <Jumbotron fluid>
+                        <Container>
+                            <h1>Discover Space Missions</h1>
+                        </Container>
+                    </Jumbotron>
+                </div>
 
-// const btn = document.createElement('button');
-// btn.textContent = 'My Button';
-// btn.addEventListener('click', () => {
-//     import('./mars').then(mars => {
-//         app.appendChild(mars.default);
-//     });
-// });
-//app.append(btn);
+            </div>
+        );
+    }
+}
 
-// const img = document.createElement('img')
-// img.src = spacePhoto;
-// app.appendChild(img);
-
-// const SpaceImage = () => (
-//     <img src={spacePhoto}>
-//     </img>
-// );
-
-ReactDOM.render(<Playground />, app);
+ReactDOM.render(
+    <App />,
+    document.getElementById('app')
+);
