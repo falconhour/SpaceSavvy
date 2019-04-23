@@ -10,9 +10,9 @@ class App extends React.Component {
         return (
             <div>
                 <div className='big-header'>
-                    <Navbar expand="lg" className='cs-navbar'>
+                    <Navbar expand="lg" className='cs-navbar' variant='dark'>
                         <Container>
-                            <Navbar.Brand href="#home">SPACE SAVVY</Navbar.Brand>
+                            <Navbar.Brand variant='light' href="#home">SPACE SAVVY</Navbar.Brand>
                         </Container>
                     </Navbar>
                     <Jumbotron fluid>

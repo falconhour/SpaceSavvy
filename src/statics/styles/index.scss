@@ -1,6 +1,7 @@
 @import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../fonts/GothicA1-Regular.ttf';
 
-$font-stack: WorkSans;
+$font-stack: sans-serif;
 $primary-color: #FFF;
 
 body {
@@ -10,9 +11,17 @@ body {
 }
 
 .big-header {
-  background-image: url('../../statics/space-photo.jpg');
+  background-image: url('../../statics/space-photo.jpg');  
+  background-position-y: 30%;
+  background-size: cover;
 }
 
 .cs-navbar {
   background-color: rgba(0,0,0,0);
+}
+
+@media screen and (min-width: 1300px) {
+  .big-header {
+    background-position-y: 30%;
+  }
 }
