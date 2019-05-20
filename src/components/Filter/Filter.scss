@@ -1,0 +1,26 @@
+.filter {
+    color: #495057;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ececec;
+  }
+  
+  .filter .form-label {
+    font-weight: 600;
+  }
+  
+  .filter .apply-button-container {
+    display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+          "a"
+          "a"
+  }
+  
+  .filter .apply-button-container > button {
+    grid-area: a;
+    align-self: flex-end;
+  }
+  
+  .flight {
+    background-color: #fff;
+  }

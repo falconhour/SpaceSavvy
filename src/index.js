@@ -3,24 +3,19 @@ import ReactDOM from 'react-dom';
 import Header from './components/Header/Header';
 import './statics/styles/index.scss';
 import Jumbotron from './components/Jumbotron/Jumbotron';
-import { Container, Row, Col, Navbar } from 'react-bootstrap';
+import { Container, Row, Col, Navbar, Form, Button, Dropdown, DropdownButton } from 'react-bootstrap';
+import Filter from './components/Filter/Filter';
+import BigHeader from './components/BigHeader/BigHeader';
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <div className='big-header'>
-                    <Navbar expand="lg" className='cs-navbar' variant='dark'>
-                        <Container>
-                            <Navbar.Brand variant='light' href="#home">SPACE SAVVY</Navbar.Brand>
-                        </Container>
-                    </Navbar>
-                    <Jumbotron fluid>
-                        <Container>
-                            <h1>Discover Space Missions</h1>
-                        </Container>
-                    </Jumbotron>
-                </div>
+                <BigHeader />
+                <Filter />
+                <Container className='flight content'>
+                    <h1>Test</h1>
+                </Container>
 
             </div>
         );

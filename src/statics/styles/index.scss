@@ -7,17 +7,21 @@ $primary-color: #FFF;
 body {
   font: 100% $font-stack;
   color: $primary-color;
-  background-color: #333;
+  background-color: #ececec;
 }
 
-.big-header {
-  background-image: url('../../statics/space-photo.jpg');  
-  background-position-y: 30%;
-  background-size: cover;
+.btn, .form-control {
+  border-radius: 0.1rem;
 }
 
-.cs-navbar {
-  background-color: rgba(0,0,0,0);
+.content {
+  background-color: #f9f9f9;
+  padding: 1.5em 1.5em .5em 1.5em;
+}
+
+.btn-primary {
+  background-color: #3ac5aa;
+  border-color: #3ac5aa;
 }
 
 @media screen and (min-width: 1300px) {
