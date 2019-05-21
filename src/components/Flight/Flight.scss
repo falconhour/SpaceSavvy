@@ -1,0 +1,32 @@
+$font-weight: 600;
+$font-color: #7E8A96;
+
+.flight img {
+    width: 100%;
+    margin-left: -1em;
+}
+
+.flight .flight-details-container > div {
+    margin-bottom: .5em;
+}
+
+.flight .flight-name span {
+    font-weight: $font-weight;
+    margin-left: -1em;
+}
+
+.flight .flight-number span {
+    font-size: 1.25em;
+    font-weight: $font-weight;
+}
+
+.flight .flight-description span {
+    font-size: 0.9em;
+    color: $font-color;
+    margin-left: -1em;
+}
+
+.flight .flight-number-label {
+    font-size: 0.9em;
+    color: $font-color;
+}
