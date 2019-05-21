@@ -29,6 +29,11 @@ body {
   border-color: #3ac5aa;
 }
 
+.btn-primary:hover {
+  background-color: #31AA92;
+  border-color: #31AA92;
+}
+
 @media screen and (min-width: 1300px) {
   .big-header {
     background-position-y: 30%;

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
+import { Row, Col, Image, Button } from 'react-bootstrap';
 
 import './Flight.scss'
+
+import FlightLink from '../FlightLink/FlightLink'
 
 class Flight extends Component {
     constructor(props) {
@@ -32,6 +34,9 @@ class Flight extends Component {
                                     </span>
                         </Col>
                         <span className='flight-number-label'>Flight Number</span>
+                    </Row>
+                    <Row>
+                        <FlightLink />
                     </Row>
                 </Col>
             </Row>
