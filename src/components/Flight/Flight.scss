@@ -1,6 +1,10 @@
 $font-weight: 600;
 $font-color: #7E8A96;
 
+.flight {
+    padding-bottom: 2em;
+}
+
 .flight img {
     width: 100%;
     margin-left: -1em;
@@ -10,12 +14,18 @@ $font-color: #7E8A96;
     margin-bottom: .5em;
 }
 
-.flight .flight-name span {
+.flight .flight-name {
     font-weight: $font-weight;
     margin-left: -1em;
 }
 
-.flight .flight-number span {
+.flight .flight-success {
+    margin-left: 0;
+    color: #f7517e;
+    font-weight: 600;
+}
+
+.flight .flight-number {
     font-size: 1.25em;
     font-weight: $font-weight;
 }
