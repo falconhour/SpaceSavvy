@@ -10,7 +10,7 @@ class Footer extends Component {
     render() {
         return (
             <footer className='container footer'>
-                    <p>Copyright 2019 Space Savvy</p>
+                <p>Copyright 2019 Space Savvy</p>
             </footer>
         );
     }

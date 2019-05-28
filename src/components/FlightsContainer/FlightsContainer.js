@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
+import { connect } from "react-redux";
 
 import Flight from '../Flight/Flight';
 import { flights } from '../../services/SpaceXData';
@@ -17,7 +18,7 @@ class FlightsContainer extends Component {
         return (
             <Container className='flights-container'>
                 {
-                    flights.map((flight, i) => {
+                    this.props.flights.map((flight, i) => {
                         return <Flight key={i} flightNumber={flight.flightNumber}
                                 missionName={flight.missionName}
                                 launchDateUtc={flight.launchDateUtc}
@@ -33,4 +34,11 @@ class FlightsContainer extends Component {
     }
 }
 
-export default FlightsContainer;
+const mapStateToProps = (state) => {
+    debugger;
+    return {
+        flights: state.flights
+    }
+}
+
+export default connect(mapStateToProps)(FlightsContainer);

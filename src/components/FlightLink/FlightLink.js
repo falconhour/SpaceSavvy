@@ -55,8 +55,8 @@ class FlightLink extends Component {
         const links = checkFlightLinks(flightLinks);
         return (
             <React.Fragment>
-                {links.map(link => {
-                    return <Button variant='outline-secondary' className='flight-link'
+                {links.map((link, i) => {
+                    return <Button key={i} variant='outline-secondary' className='flight-link'
                         href={link.url}
                         >
                         {link.linkLabel}
