@@ -14,7 +14,7 @@ export const flights = [
             "siteNameLong": "Cape Canaveral Air Force Station Space Launch Complex 40"
           },
         "links": {
-            "missionPatch": "https://images2.imgbox.com/c5/53/5jklZkPz_o.png",
+            "missionPatch": "https://images2.imgbox.com/40/e3/GypSkayF_o.png",
             "missionPatchSmall": "https://images2.imgbox.com/12/7c/NiniYxoh_o.png",
             "redditLaunch": "https://www.reddit.com/r/spacex/comments/90p1a6/rspacex_telstar_19v_official_launch_discussion/",
             "redditMedia": "https://www.reddit.com/r/spacex/comments/90oxrr/rspacex_telstar_19v_media_thread_videos_images/",

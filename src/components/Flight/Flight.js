@@ -22,7 +22,7 @@ class Flight extends Component {
         return (
             <Row className='flight'>
                 <Col xs={1}>
-                    <Image src={this.props.missionPatch} />
+                    <Image src={this.props.links.missionPatch} />
                 </Col>
                 <Col xs={11} className='flight-details-container'>
                     <Row>

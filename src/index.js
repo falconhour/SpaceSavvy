@@ -7,6 +7,7 @@ import { Container, Row, Col, Navbar, Form, Button, Dropdown, DropdownButton, Im
 import Filter from './components/Filter/Filter';
 import BigHeader from './components/BigHeader/BigHeader';
 import FlightsContainer from './components/FlightsContainer/FlightsContainer';
+import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
     render() {
@@ -17,10 +18,7 @@ class App extends React.Component {
                 <Container className='content'>
                     <FlightsContainer />
                 </Container>
-                <Container style={{ fontSize: '0.9em', color: '#7E8A96', paddingTop: '1.75em', paddingBottom: '1.25em' }}>
-                    <p style={{ marginLeft: '-1em' }}>Copyright 2019 Space Savvy</p>
-                </Container>
-
+                <Footer />
             </div>
         );
     }
